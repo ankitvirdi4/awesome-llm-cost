@@ -2,7 +2,7 @@
 
 > A curated list of tools, libraries, papers, and patterns for **LLM cost engineering**. Tracking, routing, caching, quantization, budgeting, and reducing the cost of running large language models in production.
 
-> 🚧 **Early stage.** This list is being actively built. The first comprehensive version (~150 entries across 10 categories) is targeted for [TARGET DATE]. Star the repo to follow along, or [open an issue](https://github.com/ankitvirdi4/awesome-llm-cost/issues) to suggest entries.
+> 🚧 **Early stage.** This list is being actively built. The first comprehensive version (~150 entries across 10 categories) is targeted for **3 May 2026**. Star the repo to follow along, or [open an issue](https://github.com/ankitvirdi4/awesome-llm-cost/issues) to suggest entries.
 
 ## Why this list
 

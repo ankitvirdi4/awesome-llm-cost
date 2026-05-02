@@ -7,6 +7,6 @@ By participating, you agree to uphold the standards described there.
 ## Reporting
 
 To report unacceptable behavior, contact the maintainer at
-[ankit@example.com](mailto:ankit@example.com). All reports are confidential.
+[ankitvirdi4@gmail.com](mailto:ankitvirdi4@gmail.com). All reports are confidential.
 
 [covenant]: https://www.contributor-covenant.org/version/2/1/code_of_conduct/
