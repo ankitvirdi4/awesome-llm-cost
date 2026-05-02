@@ -33,7 +33,7 @@ Out of scope:
 
 Categories will be filled in as entries are added. Planned structure:
 
-- Cost Tracking & Observability
+- Cost Tracking, Observability & Budgets
 - Routing & Model Selection
 - Caching
 - Quantization & Compression
@@ -41,7 +41,6 @@ Categories will be filled in as entries are added. Planned structure:
 - Pricing Data
 - Calculators & Estimators
 - Cost-Aware Serving (Research)
-- Budgets & Circuit Breakers
 - Benchmarks & Leaderboards
 
 ## Contributing

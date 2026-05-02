@@ -12,6 +12,17 @@ Every entry must meet all of the following:
 4. **Accurate one line description.** Says what the project does, not what its marketing site says. Plain English. No buzzwords. No "world's first" or "next generation" or "revolutionary."
 5. **Fits one of the listed categories.** If your entry does not fit, open an issue first to discuss whether the category list should be extended.
 
+## Closed source and commercial projects
+
+Closed source, freemium, and commercial projects are welcome if they meet criteria 1 to 5. They must be flagged so readers can self select. Append `(closed source)` to the end of the description.
+
+```
+- [LangSmith](https://smith.langchain.com) — Tracing, eval, and prompt management for LangChain apps. (closed source)
+- [Datadog LLM Observability](https://docs.datadoghq.com/llm_observability) — LLM tracing inside Datadog APM. (closed source)
+```
+
+Self promotion is allowed but discouraged early. If the project is yours, say so in the PR description so the maintainer can apply extra scrutiny.
+
 ## Format
 
 Entries follow this exact format:
