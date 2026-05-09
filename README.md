@@ -196,6 +196,7 @@ The community maintained data sources that the rest of the ecosystem depends on.
 - [PricePerToken](https://pricepertoken.com) - Comparison and leaderboards across 300+ models.
 - [TokenCost App](https://tokencost.app) - Leaderboard with quality versus cost scoring.
 - [CostGoat](https://costgoat.com) - Closed source. Desktop app for tracking OpenRouter and multi provider spend in real time.
+- [TinyTools AI Cost Calculator](https://tinytools-smoky.vercel.app/) - Free browser side calculator for estimating spend across Claude, GPT, and Gemini models. Plug in expected input and output tokens, request volume, and cache hit rate to compare per million token cost across providers. No signup, all calculation runs in the browser.
 
 ## Cost Aware Serving Research
 
