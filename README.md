@@ -38,6 +38,7 @@ Tools that show you where your tokens go and let you set limits before the bill 
 - [Opik](https://github.com/comet-ml/opik) - Tracing, evaluation, and prompt playground from Comet. Good fit if you also fine tune your own models.
 - [Laminar](https://github.com/lmnr-ai/lmnr) - Agent debugging first observability with transcript view, outcome tracking, and rollout debugging.
 - [Langtrace](https://github.com/Scale3-Labs/langtrace) - OpenTelemetry based LLM tracing with a clean OTel implementation.
+- [milo-usage-forecaster](https://github.com/miloantaeus/milo-usage-forecaster-mcp) - MCP server (installs in Claude Code, Cursor, Codex) that forecasts your monthly LLM spend from local agent logs. Projects end-of-month $ with confidence band, ranks spike drivers, warns before budget breach. Free tier, MIT licensed. Disclosure: built by an autonomous AI agent, v0.1.x, building in public. Companion to `milo-cost-auditor`.
 - [OpenObserve](https://github.com/openobserve/openobserve) - Unified LLM and infrastructure observability with significantly lower storage costs than Datadog.
 - [TruLens](https://github.com/truera/trulens) - Evaluation first observability, strong for RAG.
 - [PostHog LLM Observability](https://github.com/PostHog/posthog) - LLM observability inside the broader PostHog product analytics platform.
