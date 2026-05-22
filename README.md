@@ -60,6 +60,7 @@ Tools that show you where your tokens go and let you set limits before the bill 
 Most budget enforcement lives inside the tools above.
 
 - [LiteLLM virtual keys and budgets](https://docs.litellm.ai/docs/proxy/users) - Per user, per team, and per key budgets enforced in the LiteLLM proxy. The most flexible self hostable budget layer.
+- [QuotaFlow](https://quotaflow.ai) - Closed source. Helps AI teams improve token and API resource utilization across controlled internal pools, track subscribed capacity, and reduce wasted quota.
 - [Finout](https://www.finout.io) - Closed source. Broader FinOps platform with LLM cost as one of many tracked services. Useful at organisation scale.
 
 ### Cost telemetry standards
