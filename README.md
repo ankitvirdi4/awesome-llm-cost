@@ -81,6 +81,7 @@ Sit between your app and providers. Pick the right model for each request based 
 - [TrueFoundry AI Gateway](https://www.truefoundry.com) - Closed source. Enterprise gateway with RBAC, virtual models, and deployment flexibility.
 - [Kong AI Gateway](https://konghq.com/products/kong-ai-gateway) - Closed source. Kong's AI plugins for teams already running Kong as their API layer.
 - [Bifrost](https://github.com/maximhq/bifrost) - Rust based router with microsecond scale overhead at high RPS, plus built in budget controls and intelligent routing.
+- [FerryAPI](https://www.ferryapi.io/) - Closed source. OpenAI compatible gateway with prepaid billing, customer API keys, and usage records.
 
 ### Smart and cost aware routers
 
