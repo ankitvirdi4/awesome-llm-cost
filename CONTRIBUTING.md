@@ -11,10 +11,13 @@ Every entry must meet all of the following:
 3. **Has a working link.** GitHub repo, project page, or paper URL that resolves. Broken links are removed on sight.
 4. **Accurate one line description.** Says what the project does, not what its marketing site says. Plain English. No buzzwords. No "world's first" or "next generation" or "revolutionary."
 5. **Fits one of the listed categories.** If your entry does not fit, open an issue first to discuss whether the category list should be extended.
+6. **Has a minimum track record.** The project must have at least 6 months of public history (first commit or first published version 6+ months ago) and at least one signal of real world use (community stars, downloads, citations, or external write ups). Excellent brand new projects are still excellent; they belong here after burn in. Reopen the PR once the project has the history.
 
 ## Closed source and commercial projects
 
-Closed source, freemium, and commercial projects are welcome if they meet criteria 1 to 5. They must be flagged so readers can self select. Append `(closed source)` to the end of the description.
+Closed source, freemium, and commercial projects are welcome if they meet criteria 1 to 6 and offer functionality the open source alternatives already listed do not. The PR description must articulate that differentiator in one sentence. A closed source entry that duplicates the capability of an OSS entry already in the same section is closed.
+
+All closed source entries must be flagged so readers can self select. Append `(closed source)` to the end of the description.
 
 ```
 - [LangSmith](https://smith.langchain.com) — Tracing, eval, and prompt management for LangChain apps. (closed source)
@@ -51,6 +54,12 @@ Examples of what we reject:
 2. **Open an issue first if you are unsure** the entry qualifies. A 2 line issue saves both of us the time of a closed PR.
 3. **Place the entry alphabetically within its category** unless the category has its own ordering rule.
 4. **Update the table of contents** if you are adding a new section header.
+
+## Cross list submissions
+
+Pull requests that are part of mass cross posting to other awesome lists are closed on sight regardless of project quality. The list is curated for thoughtful submissions, not distribution sweeps.
+
+Operational rule: if the PR author has 10+ open PRs across awesome-* repositories in the past 30 days adding the same project, this PR is closed without further review. Single thoughtful submissions, including for self built projects, are still welcome (see Self promotion above).
 
 ## Rejection is not personal
 
