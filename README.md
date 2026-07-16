@@ -116,6 +116,7 @@ For self hosted inference. Reuses computed key value attention states across req
 - [vLLM](https://github.com/vllm-project/vllm) - PagedAttention, continuous batching, and automatic prefix caching. The default open source LLM serving framework.
 - [SGLang](https://github.com/sgl-project/sglang) - Fast LLM serving with RadixAttention prefix caching, particularly strong for prompts with shared structure.
 - [LMCache](https://github.com/LMCache/LMCache) - Extends vLLM with GPU to CPU RAM to disk KV cache tiering for significant latency reduction on cache hits.
+- [KV Cache Store](https://kvcachestore.com/) — Hosted KV-cache artifact registry plus open-source Rust CLI. Precompute, verify, quantize, and share key/value cache artifacts across LLM inference runs to cut prefill cost and latency for RAG and long-context prompts.
 
 ## Prompt Compression
 
