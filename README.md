@@ -31,6 +31,7 @@ Tools that show you where your tokens go and let you set limits before the bill 
 ### Open source
 
 - [agenttrace](https://github.com/luoyuctl/agenttrace) - Local-first TUI and CLI that turns AI coding agent trace logs into cost, token, latency, and health regression reports.
+- [sidegrade](https://github.com/iotexproject/sidegrade) - Zero-install CLI (`npx sidegrade`) that reads local coding-agent usage (Claude Code, Codex, Hermes, OpenCode) and shows which model gives the same intelligence for less, scoring each on the Artificial Analysis Intelligence Index and re-pricing your own token mix. 100% local, MIT.
 - [Langfuse](https://github.com/langfuse/langfuse) - Full LLM tracing, prompt management, evaluation, datasets, with token and cost tracking exposed via a metrics API. Self hostable on PostgreSQL and ClickHouse.
 - [Helicone](https://github.com/Helicone/helicone) - Proxy first observability with cost tracking, caching, and rate limits, no SDK install required. Self hostable.
 - [OpenLLMetry](https://github.com/traceloop/openllmetry) - OpenTelemetry instrumentation for LLMs from Traceloop. Vendor neutral, exports to any OTel backend.
