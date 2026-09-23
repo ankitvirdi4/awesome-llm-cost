@@ -42,6 +42,7 @@ Tools that show you where your tokens go and let you set limits before the bill 
 - [TruLens](https://github.com/truera/trulens) - Evaluation first observability, strong for RAG.
 - [PostHog LLM Observability](https://github.com/PostHog/posthog) - LLM observability inside the broader PostHog product analytics platform.
 - [SigNoz](https://github.com/SigNoz/signoz) - OpenTelemetry native APM with LLM observability features.
+- [Spenda](https://github.com/sshnaidm/spenda) - Local dashboard for token usage and costs from Codex, OpenCode, Claude Code, and Cursor histories.
 
 ### Commercial
 
