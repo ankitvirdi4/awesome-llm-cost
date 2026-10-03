@@ -222,6 +222,8 @@ Cost vs quality leaderboards. Quality only ones (LMSYS Arena etc.) are out of sc
 - [CostGoat LLM API Comparison](https://costgoat.com/compare/llm-api) - 324+ APIs ranked by quality, price, and value.
 - [OpenRouter Rankings](https://openrouter.ai/rankings) - Usage based rankings across the OpenRouter platform.
 
+- [ModelBenchmark](https://modelbenchmark.io) — Ranks 202 models on a composite of 16 public benchmarks and compares price, context window, and release date across 2,406 models. (closed source)
+
 ## Patterns
 
 The techniques themselves, not the tools that implement them. Learn the pattern, then pick a tool above.
