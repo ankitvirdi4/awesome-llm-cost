@@ -1,12 +1,12 @@
 # Awesome LLM Cost [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
-> Tools, libraries, and patterns for reducing LLM API costs. Open source observability platforms, cost aware routers, prompt caching, semantic caches, batching APIs, quantization, and pricing data for Anthropic, OpenAI, and Gemini.
+> Reducing the cost of running large language models in production.
 
 LLM cost is the most discussed pain point for teams shipping AI in 2026, but the tools and patterns for managing it are scattered across observability platforms, routing libraries, caching layers, quantization research, provider docs, and pricing calculators. There is no single map.
 
 This list aims to be that map.
 
-In scope: anything that helps you spend less on LLMs without giving up quality you actually need. Out of scope: general LLM observability, pure inference speed work, prompt engineering for quality. Every entry was verified to be actively maintained and in real use as of May 2026.
+In scope: anything that helps you spend less on LLMs without giving up quality you actually need. Out of scope: general LLM observability, pure inference speed work, prompt engineering for quality. Every entry must meet the maintenance and track record bar in the contribution guidelines, and entries that stop meeting it are removed.
 
 ## Contents
 
@@ -84,7 +84,6 @@ Sit between your app and providers. Pick the right model for each request based 
 
 ### Smart and cost aware routers
 
-- [RouteLLM](https://github.com/lm-sys/RouteLLM) - Reference framework from LMSYS for serving and evaluating preference data driven LLM routers.
 - [NotDiamond](https://www.notdiamond.ai) - Closed source. Per query model routing with quality aware predictions.
 
 ## Caching
@@ -106,8 +105,7 @@ Eliminates the LLM call entirely on a hit. Hit rate ranges from 10 percent for o
 
 - [GPTCache](https://github.com/zilliztech/GPTCache) - The reference open source semantic cache with multiple embedding and storage backends, integrated with LangChain and llama_index.
 - [Redis LangCache](https://redis.io/langcache/) - Closed source. Redis's official semantic cache product, production grade.
-- [Upstash Semantic Cache](https://upstash.com/docs/vector/sdks/ts/semantic-cache) - Closed source. Serverless semantic cache built on Upstash Vector.
-- [Portkey semantic cache](https://portkey.ai/features/semantic-cache) - Feature within the Portkey gateway with up to 40 percent reported cost reduction.
+- [Portkey semantic cache](https://portkey.ai/docs/product/ai-gateway/cache-simple-and-semantic) - Feature within the Portkey gateway with up to 40 percent reported cost reduction.
 
 ### Inference infrastructure KV cache
 
@@ -179,13 +177,11 @@ The community maintained data sources that the rest of the ecosystem depends on.
 ### Tokenizers
 
 - [tiktoken](https://github.com/openai/tiktoken) - The official OpenAI BPE tokenizer in Python.
-- [js-tiktoken](https://github.com/dqbd/tiktoken) - JS port of tiktoken with both pure JS and WebAssembly builds. WebAssembly is 3 to 6 times faster than pure JS for large texts.
 - [gpt-tokenizer](https://github.com/niieani/gpt-tokenizer) - Pure JS tokenizer with the smallest bundle and fastest small text performance.
 - [tiktoken-go](https://github.com/pkoukk/tiktoken-go) - Go port of tiktoken.
 - [tiktoken-rs](https://github.com/zurawiki/tiktoken-rs) - Rust port of tiktoken.
 - [SharpToken](https://github.com/dmitry-brazhenko/SharpToken) - C# port of tiktoken.
 - [jtokkit](https://github.com/knuddelsgmbh/jtokkit) - Java port of tiktoken.
-- [tokencost](https://github.com/AgentOps-AI/tokencost) - Python library that combines tokenization with up to date pricing for cost calculation.
 - [Anthropic countTokens API](https://docs.claude.com/en/docs/build-with-claude/token-counting) - Official, free, network based. Currently the only ground truth source for Claude models from the official SDK.
 - [Gemini countTokens](https://ai.google.dev/gemini-api/docs/tokens) - Official pre flight token counting via the Gemini SDK.
 
@@ -203,7 +199,7 @@ The community maintained data sources that the rest of the ecosystem depends on.
 The papers worth knowing if you want to think rigorously about cost versus quality.
 
 - [FrugalGPT](https://arxiv.org/abs/2305.05176) - Chen, Zaharia, Zou. The seminal paper. Proposes prompt adaptation, LLM approximation, and LLM cascade with up to 98 percent cost reduction at GPT-4 quality on benchmark tasks.
-- [RouteLLM: Learning to Route LLMs with Preference Data](https://arxiv.org/abs/2406.18665) - Ong et al. ICLR 2025. Foundation for the open source RouteLLM framework.
+- [RouteLLM: Learning to Route LLMs with Preference Data](https://arxiv.org/abs/2406.18665) - Ong et al. ICLR 2025. Introduces preference data trained routers between a strong and a weak model.
 - [Hybrid LLM: Cost-Efficient and Quality-Aware Query Routing](https://arxiv.org/abs/2404.14618) - Ding et al. ICLR 2024. Cost quality cascade routing.
 - [AutoMix: Automatically Mixing Language Models](https://arxiv.org/abs/2310.12963) - Aggarwal et al. Smaller model self verifies before escalating to a larger model.
 - [xRouter: Training Cost-Aware LLMs Orchestration via Reinforcement Learning](https://arxiv.org/abs/2510.08439) - RL trained cost aware orchestrator. Useful for thinking about routing as a learnable policy.
@@ -228,7 +224,7 @@ The techniques themselves, not the tools that implement them. Learn the pattern,
 
 ### Cascade routing
 
-Send each request to the cheapest model first. Run a cheap quality check on the response. Escalate to a more expensive model only if the check fails. Documented in the FrugalGPT paper and operationalised by the RouteLLM framework, both linked in the research and routing sections above. The economic argument is straightforward: most production traffic is easy and a small model is enough.
+Send each request to the cheapest model first. Run a cheap quality check on the response. Escalate to a more expensive model only if the check fails. Documented in the FrugalGPT and RouteLLM papers, both linked in the research section above. The economic argument is straightforward: most production traffic is easy and a small model is enough.
 
 ### Distillation as cost optimization
 
