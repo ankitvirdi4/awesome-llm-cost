@@ -193,6 +193,7 @@ The community maintained data sources that the rest of the ecosystem depends on.
 - [PricePerToken](https://pricepertoken.com) - Comparison and leaderboards across 300+ models.
 - [TokenCost App](https://tokencost.app) - Leaderboard with quality versus cost scoring.
 - [CostGoat](https://costgoat.com) - Closed source. Desktop app for tracking OpenRouter and multi provider spend in real time.
+- [LLM Versus API Cost Calculator](https://llmversus.vercel.app/tools/api-cost-calculator/) - Free calculator comparing LLM API costs across 50+ models with monthly estimates side-by-side.
 
 ## Cost Aware Serving Research
 
