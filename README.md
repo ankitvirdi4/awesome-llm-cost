@@ -61,6 +61,7 @@ Most budget enforcement lives inside the tools above.
 
 - [LiteLLM virtual keys and budgets](https://docs.litellm.ai/docs/proxy/users) - Per user, per team, and per key budgets enforced in the LiteLLM proxy. The most flexible self hostable budget layer.
 - [Finout](https://www.finout.io) - Closed source. Broader FinOps platform with LLM cost as one of many tracked services. Useful at organisation scale.
+- [YBK (元冰可)](https://github.com/01men/ybkkasi) - Self-hosted asset ledger for MCP servers, skills, agents and AI apps, with cost attributed by department x agent x skill. Org attribution is a hard validation on the metering write path, so unattributable spend fails at ingest rather than at month end. MIT.
 
 ### Cost telemetry standards
 
