@@ -189,6 +189,7 @@ The community maintained data sources that the rest of the ecosystem depends on.
 
 - [OpenAI Tokenizer](https://platform.openai.com/tokenizer) - Official browser tokenizer for cl100k_base and o200k_base.
 - [Claude Tokenizer](https://claude-tokenizer.vercel.app/) - Community built tokenizer that uses the official Anthropic API.
+- [KickLLM](https://kickllm.com/) - Browser calculator that compares monthly and per conversation API cost across 25+ models and estimates the break even point for self hosting.
 - [LiteLLM Pricing Calculator](https://docs.litellm.ai/docs/proxy/cost_tracking) - Cost estimate endpoint built into the LiteLLM proxy that forecasts spend from expected token usage and request volume.
 - [PricePerToken](https://pricepertoken.com) - Comparison and leaderboards across 300+ models.
 - [TokenCost App](https://tokencost.app) - Leaderboard with quality versus cost scoring.
