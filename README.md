@@ -138,6 +138,7 @@ Make models smaller and cheaper to run. Mostly relevant for self hosted inferenc
 
 - [Hugging Face TRL](https://github.com/huggingface/trl) - Transformer Reinforcement Learning library with student teacher pipelines for distilling large model behaviour into smaller fine tuned models.
 - [DistillKit](https://github.com/arcee-ai/DistillKit) - Arcee AI's open source distillation toolkit for producing small high quality student models from larger teachers.
+- [callswap](https://github.com/shubhamjoshipromail-svg/callswap) - Distils a repeated LLM classification call into a local model, proves agreement on a sealed test with a 95% lower bound before switching, and serves an OpenAI-compatible endpoint that falls back to the LLM when unsure.
 
 ### Foundational papers
 
